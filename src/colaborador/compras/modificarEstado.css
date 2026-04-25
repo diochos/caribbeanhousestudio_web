@@ -2,14 +2,14 @@
 body {
     font-family: 'Montserrat', sans-serif;
     margin: 0;
-    padding: 0;
+    padding: 40px 20px; /* Añade un poco de espacio arriba y abajo para que no quede pegado al borde */
     display: flex;
     justify-content: center;
-    align-items: center;
-    height: 100vh;
-    background-color: #F4EDE0; /* Fondo cálido */
+    align-items: flex-start; /* Cambiado de 'center' a 'flex-start' para evitar que se corte arriba */
+    min-height: 100vh; /* Cambiado de 'height' a 'min-height' para que crezca según el contenido */
+    background-color: #F4EDE0; 
+    box-sizing: border-box; /* Asegura que el padding no desborde la pantalla */
 }
-
 .pedido-container {
     background: #FFF8F0; /* Fondo suave */
     padding: 30px;
